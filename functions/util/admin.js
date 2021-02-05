@@ -2,10 +2,7 @@
 
 const admin = require('firebase-admin');
 
-admin.initializeApp({
-  credential: admin.credential.applicationDefault(),
-  databaseURL: 'https://<DATABASE_NAME>.firebaseio.com',
-});
+admin.initializeApp();
 
 const db = admin.firestore();
 
