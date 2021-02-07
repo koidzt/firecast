@@ -91,6 +91,7 @@ exports.signUpUser = (request, response) => {
     });
 };
 
+//Delete Image
 deleteImage = (imageName) => {
   const bucket = admin.storage().bucket();
   const path = `${imageName}`;
